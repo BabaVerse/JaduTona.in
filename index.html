@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4W65X1M8M"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H4W65X1M8M');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadu tona .in</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ99+eYqfXzI7k4/tS+2fR9/Fm2u45kK3W0JbK6xX+6I6J6nB4g5Qp+oI5xL6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #fff7ed, #f3e8ff);
+            color: #343a40;
+        }
+        .creepster-font {
+            font-family: 'Creepster', cursive;
+        }
+        .text-main-accent {
+            color: #ff7f50;
+        }
+        .border-main-accent {
+            border-color: #ff7f50;
+        }
+        .bg-light-purple {
+            background-color: #f3e8ff;
+        }
+        .text-dark-purple {
+            color: #6a0dad;
+        }
+        .magic-map {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://placehold.co/800x400/ced4da/495057?text=Street+Map+Placeholder');
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #adb5bd;
+            border-radius: 12px;
+            position: relative;
+        }
+        .heatmap-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            background-image: radial-gradient(circle at 20% 30%, rgba(139, 0, 0, 0.5) 0%, transparent 40%),
+                              radial-gradient(circle at 70% 60%, rgba(139, 0, 0, 0.5) 0%, transparent 40%),
+                              radial-gradient(circle at 50% 45%, rgba(139, 0, 0, 0.5) 0%, transparent 40%);
+        }
+        .magic-blip {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #8b0000;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+            border: 2px solid #fff;
+            z-index: 10;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.8); opacity: 0.8; }
+        }
+        .blip-1 { top: 20%; left: 30%; }
+        .blip-2 { top: 60%; left: 70%; }
+        .blip-3 { top: 45%; left: 50%; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto w-full space-y-12">
+
+        <!-- Header Section (Hero) -->
+        <header class="text-center py-16 md:py-24">
+            <h1 class="creepster-font text-6xl md:text-8xl text-dark-purple mb-4 animate-pulse">
+                <i class="fa-solid fa-skull-crossbones text-5xl md:text-7xl mr-4"></i>Jadu tona .in
+            </h1>
+            <p class="text-xl md:text-3xl text-gray-700 max-w-2xl mx-auto mb-6">
+                दुश्मन? अब हमारी समस्या है। उनकी बदकिस्मती का इंतज़ाम हम करेंगे, ताकि आप सुकून से सो सकें।
+            </p>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                अब तांत्रिक पाए 10 मिनट में
+            </p>
+
+            <!-- Hero Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transform hover:scale-105 transition-all duration-300">
+                    <div class="text-3xl font-bold text-red-600 mb-2">
+                        <i class="fa-solid fa-fire"></i> 99.9%
+                    </div>
+                    <p class="text-gray-700 font-semibold">सफल बदला दर</p>
+                    <p class="text-sm text-gray-500 mt-1">पिछले महीने में</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transform hover:scale-105 transition-all duration-300">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">
+                        <i class="fa-solid fa-users"></i> 10,000+
+                    </div>
+                    <p class="text-gray-700 font-semibold">खुश ग्राहक</p>
+                    <p class="text-sm text-gray-500 mt-1">जिनका बदला पूरा हुआ</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transform hover:scale-105 transition-all duration-300">
+                    <div class="text-3xl font-bold text-orange-600 mb-2">
+                        <i class="fa-solid fa-clock"></i> 24/7
+                    </div>
+                    <p class="text-gray-700 font-semibold">तांत्रिक उपलब्ध</p>
+                    <p class="text-sm text-gray-500 mt-1">त्वरित सेवा</p>
+                </div>
+            </div>
+
+            <!-- Hero Features -->
+            <div class="bg-gradient-to-r from-purple-100 to-pink-100 p-8 rounded-2xl shadow-lg mb-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-dark-purple mb-6">हमारी विशेषताएं</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fa-solid fa-shield-halved text-2xl text-green-500"></i>
+                        <span class="text-gray-700 font-medium">100% सुरक्षित</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fa-solid fa-eye-slash text-2xl text-blue-500"></i>
+                        <span class="text-gray-700 font-medium">गुप्त सेवा</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fa-solid fa-rocket text-2xl text-red-500"></i>
+                        <span class="text-gray-700 font-medium">तुरंत असर</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fa-solid fa-handshake text-2xl text-purple-500"></i>
+                        <span class="text-gray-700 font-medium">भरोसेमंद</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Testimonials -->
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-2xl md:text-3xl font-bold text-dark-purple mb-8 text-center">हमारे खुश ग्राहकों की बातें</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-orange-500">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 text-sm font-semibold">5/5</span>
+                        </div>
+                        <blockquote class="text-gray-700 italic mb-4 text-sm">
+                            "मेरे दुश्मन की गाड़ी रोज़ाना खराब होने लगी! इतनी जल्दी असर होगा सोचा नहीं था। पैसा वसूल सेवा!"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user text-gray-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">राज कुमार</p>
+                                <p class="text-xs text-gray-500">दिल्ली</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 text-sm font-semibold">5/5</span>
+                        </div>
+                        <blockquote class="text-gray-700 italic mb-4 text-sm">
+                            "अरे वाह! मेरी सास की चप्पल अब हमेशा उल्टी पहन कर निकलती है। जादू का कमाल है यह!"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-pink-300 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user text-pink-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">सुनीता देवी</p>
+                                <p class="text-xs text-gray-500">मुंबई</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 text-sm font-semibold">5/5</span>
+                        </div>
+                        <blockquote class="text-gray-700 italic mb-4 text-sm">
+                            "मेरे बॉस का कॉम्प्यूटर अब हर 5 मिनट में रीस्टार्ट होता है! बेहतरीन सेवा। अब मैं आराम से काम कर सकता हूं।"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">अमित शर्मा</p>
+                                <p class="text-xs text-gray-500">बैंगलोर</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-red-500">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 text-sm font-semibold">5/5</span>
+                        </div>
+                        <blockquote class="text-gray-700 italic mb-4 text-sm">
+                            "मेरी पड़ोसी आंटी का वाईफाई अब सिर्फ 2G स्पीड में चलता है। उनके ड्रामे भी अब रुक गए हैं!"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-300 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">प्रिया गुप्ता</p>
+                                <p class="text-xs text-gray-500">पुणे</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-indigo-500">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 text-sm font-semibold">5/5</span>
+                        </div>
+                        <blockquote class="text-gray-700 italic mb-4 text-sm">
+                            "मेरे एक्स का नया बॉयफ्रेंड अब हमेशा गलत मेट्रो में चढ़ जाता है। इससे बेहतर तंत्र-मंत्र कहीं नहीं मिलेगा!"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-purple-300 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user text-purple-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">रोहित मल्होत्रा</p>
+                                <p class="text-xs text-gray-500">गुड़गांव</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-pink-500">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-gray-600 text-sm font-semibold">5/5</span>
+                        </div>
+                        <blockquote class="text-gray-700 italic mb-4 text-sm">
+                            "मेरे ससुर जी का रिमोट अब सिर्फ़ न्यूज़ चैनल पर ही काम करता है। शांति मिल गई है घर में!"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-300 rounded-full flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-user text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">अंजली सिंह</p>
+                                <p class="text-xs text-gray-500">लखनऊ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Ad 1: Integrated into the website flow -->
+        <div class="p-6 rounded-xl bg-yellow-100 border border-yellow-300 shadow-lg text-center mb-8 transform hover:scale-105 transition-transform duration-300 cursor-pointer ad-click" data-ad-id="ad-main-1">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">अपनी उदासी को बेचें! </h3>
+            <p class="text-sm text-gray-600">क्या आप अपनी निराशा और हताशा से थक गए हैं? हम उन्हें नकद में बदलते हैं। आज ही संपर्क करें!</p>
+        </div>
+
+        <!-- Booking Section with Packages -->
+        <section class="p-6 md:p-10 rounded-xl bg-light-purple shadow-lg border border-main-accent">
+            <h2 class="text-3xl md:text-4xl text-center text-dark-purple font-bold mb-8">अपनी बदकिस्मती का ऑर्डर दें</h2>
+            <div id="package-section" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Package 1: 999 -->
+                <div class="p-6 rounded-xl bg-white border-2 border-gray-300 hover:border-main-accent transition-all duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold text-dark-purple mb-2">छोटी सी आफ़त</h3>
+                    <p class="text-3xl font-bold mb-4 text-gray-800">₹999</p>
+                    <p class="text-sm text-gray-600 mb-6">यह शुरुआती पैकेज है। आपके दुश्मन की फोन की बैटरी हमेशा 1% पर अटकी रहेगी या वो जिस लास्ट कुकी को उठाएंगे वो हमेशा टूटी हुई निकलेगी।</p>
+                    <button class="w-full p-3 rounded-lg bg-orange-500 text-white font-bold hover:bg-white hover:text-orange-500 transition-all duration-300" data-price="999">
+                        <i class="fas fa-hat-wizard"></i> बुक करें
+                    </button>
+                </div>
+
+                <!-- Package 2: 4999 -->
+                <div class="p-6 rounded-xl bg-white border-2 border-gray-300 hover:border-main-accent transition-all duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold text-dark-purple mb-2">शनि की साढ़ेसाती</h3>
+                    <p class="text-3xl font-bold mb-4 text-gray-800">₹4999</p>
+                    <p class="text-sm text-gray-600 mb-6">इस पैकेज से दुश्मन को और भी ज़्यादा बेचैन करें। उनकी पसंदीदा शर्ट पर दाग लग जाएगा, उनकी चाबियाँ हमेशा खो जाएंगी या उनकी गाड़ी स्टार्ट नहीं होगी।</p>
+                    <button class="w-full p-3 rounded-lg bg-orange-500 text-white font-bold hover:bg-white hover:text-orange-500 transition-all duration-300" data-price="4999">
+                        <i class="fas fa-hat-wizard"></i> बुक करें
+                    </button>
+                </div>
+
+                <!-- Package 3: 9999 -->
+                <div class="p-6 rounded-xl bg-white border-2 border-gray-300 hover:border-main-accent transition-all duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold text-dark-purple mb-2">दुश्मन की लंका दहन</h3>
+                    <p class="text-3xl font-bold mb-4 text-gray-800">₹9999</p>
+                    <p class="text-sm text-gray-600 mb-6">सबसे शक्तिशाली जादू! आपका दुश्मन हमेशा के लिए उछलना शुरू कर सकता है, या उसका इंटरनेट हमेशा एक कछुए से भी ज़्यादा धीमा चलेगा।</p>
+                    <button class="w-full p-3 rounded-lg bg-orange-500 text-white font-bold hover:bg-white hover:text-orange-500 transition-all duration-300" data-price="9999">
+                        <i class="fas fa-hat-wizard"></i> बुक करें
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Guarantees Section -->
+        <section class="text-center py-8">
+            <h2 class="text-3xl md:text-4xl text-dark-purple font-bold mb-6">हमारी गारंटी</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-light-purple border border-gray-300 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-face-sad-cry text-5xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700">100% संतोषजनक निराशा</h3>
+                    <p class="text-sm text-gray-500 mt-2">हमारे जादू से आपका दुश्मन पूरी तरह निराश होगा, वरना आपका समय बर्बाद करने का हमारा कोई इरादा नहीं है।</p>
+                </div>
+                <div class="p-6 rounded-xl bg-light-purple border border-gray-300 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-feather-pointed text-5xl text-pink-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700">कोई नकली मंत्र नहीं</h3>
+                    <p class="text-sm text-gray-500 mt-2">हम सिर्फ असली, पुराने ज़माने के, आज़माए हुए मंत्रों का इस्तेमाल करते हैं। कोई चीनी नकली जादू नहीं।</p>
+                </div>
+                <div class="p-6 rounded-xl bg-light-purple border border-gray-300 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-book-skull text-5xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700">पूरी गोपनीयता</h3>
+                    <p class="text-sm text-gray-500 mt-2">आपके दुश्मन को कभी पता नहीं चलेगा कि यह जादू कहाँ से आया है। हम बहुत प्रोफेशनल हैं।</p>
+                </div>
+                <div class="p-6 rounded-xl bg-light-purple border border-gray-300 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-hourglass text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700">इंतज़ार का मज़ा</h3>
+                    <p class="text-sm text-gray-500 mt-2">हमारा जादू धीरे-धीरे काम करता है, ताकि आप दुश्मनों की बदहाली का पूरा मज़ा ले सकें। तुरंत नतीजे की उम्मीद न करें।</p>
+                </div>
+                <div class="p-6 rounded-xl bg-light-purple border border-gray-300 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-hand-holding-dollar text-5xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700">पैसे वापस की गारंटी नहीं</h3>
+                    <p class="text-sm text-gray-500 mt-2">अगर जादू काम नहीं किया, तो इसका मतलब है कि दुश्मन बहुत बुरा है। हम आपकी निराशा के लिए कोई ज़िम्मेदारी नहीं लेंगे।</p>
+                </div>
+                <div class="p-6 rounded-xl bg-light-purple border border-gray-300 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-phone-volume text-5xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700">अजीब ग्राहक सेवा</h3>
+                    <p class="text-sm text-gray-500 mt-2">अगर कोई समस्या हो, तो हमें कॉल करें। हम शायद आपका फोन उठा लें। शायद नहीं।</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ad 2: Integrated into the website flow -->
+        <div class="p-6 rounded-xl bg-white border border-gray-300 shadow-lg text-center transform hover:scale-105 transition-transform duration-300 cursor-pointer ad-click" data-ad-id="ad-main-2">
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">भविष्यफल सेवा: "सिर्फ़ बुरी ख़बरें" </h3>
+            <p class="text-sm text-gray-500">हम सिर्फ़ वही बताते हैं जो आपके साथ सच में बुरा होगा। 100% सटीक और निराशाजनक।</p>
+        </div>
+
+        <!-- Dark Energy Map Section -->
+        <section class="text-center py-8">
+            <h2 class="text-3xl md:text-4xl text-dark-purple font-bold mb-6">अंधेरी ऊर्जा का नक्शा</h2>
+            <p class="text-gray-700 mb-4">
+                हमारे प्राचीन सेंसर अंधेरी ऊर्जा की पॉकेट को खोजते हैं। देखें, कहीं कोई आप पर जादू तो नहीं कर रहा!
+            </p>
+            <div class="magic-map">
+                <div class="heatmap-overlay"></div>
+                <div class="magic-blip blip-1" title="छोटा जादू मिला!"></div>
+                <div class="magic-blip blip-2" title="बड़ा शाप मिला!"></div>
+                <div class="magic-blip blip-3" title="अजीब जादुई गतिविधि मिली..."></div>
+            </div>
+            <p id="map-message" class="mt-4 text-sm text-dark-purple transition-all duration-300">
+                अंधेरी ऊर्जा की जाँच हो रही है...
+            </p>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-gray-500 text-sm">
+            <p>
+                <i class="fa-solid fa-skull"></i> तंत्र-मंत्र बदला सेवा। सिर्फ मनोरंजन के लिए है। कोई असली शाप नहीं पड़ेगा। शायद।
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Modal for messages -->
+    <div id="message-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-8 rounded-lg shadow-2xl border-2 border-red-500 w-11/12 md:w-1/2 relative text-center">
+            <button id="close-modal" class="absolute top-2 right-2 text-gray-400 hover:text-black transition-colors duration-200">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modal-title" class="text-3xl text-red-600 font-bold mb-4"></h3>
+            <p id="modal-message" class="text-xl text-gray-800"></p>
+            <div class="mt-6">
+                <button id="modal-share-button" class="p-3 rounded-lg bg-green-500 text-white font-bold hover:bg-white hover:text-green-500 transition-all duration-300">
+                    <i class="fa-solid fa-share-nodes"></i> दोस्तों को जागरूक करें!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const packageSection = document.getElementById('package-section');
+            const mapMessage = document.getElementById('map-message');
+            const modal = document.getElementById('message-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalMessage = document.getElementById('modal-message');
+            const closeModalBtn = document.getElementById('close-modal');
+            const modalShareButton = document.getElementById('modal-share-button');
+
+            // Handle package button clicks
+            packageSection.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    showModal(
+                        "⚠️ सावधान! यह जाल है!", 
+                        "क्या आपको लगा कि वाकई में जादू-टोना होता है? असल में ये सब सिर्फ़ झाँसा है! 🚫\n " +
+                        "\n❌ तंत्र-मंत्र, जादू-टोना सब बकवास है\n❌ ये लोग आपका पैसा और समय बर्बाद करते हैं\n❌ कोई भी अंधविश्वास में न पड़ें\n\n✅ अपनी मेहनत और समझदारी पर भरोसा करें\n✅ वैज्ञानिक सोच अपनाएं\n✅ असली जादू तो आपकी तरक्की में है!\n\nइस वेबसाइट को अपने दोस्तों के साथ शेयर करें और उन्हें भी जागरूक करें। 🤝"
+                    );
+                }
+            });
+            
+            // Handle ad clicks
+            document.querySelectorAll('.ad-click').forEach(ad => {
+                ad.addEventListener('click', (e) => {
+                    const adId = e.currentTarget.dataset.adId;
+                    if (adId === 'ad-main-1') {
+                        showModal('हम आपके लिए यहाँ हैं', 'यह तो बस एक नकली विज्ञापन है। अपनी उदासी को बेचना इतना आसान नहीं है।');
+                    } else if (adId === 'ad-main-2') {
+                        showModal('सही भविष्य', 'अगर आप हमारे साथ अपना भविष्य देखेंगे, तो यकीनन आप निराश हो जाएंगे। ');
+                    }
+                });
+            });
+
+            // Handle modal share button click
+            modalShareButton.addEventListener('click', () => {
+                const shareText = "🔥 असली जादू-टोना सेवा मिल गई! 🔥\n\n✨ तुरंत बदला लें अपने दुश्मनों से\n💯 99.9% गारंटीड रिजल्ट\n⚡ 10 मिनट में तांत्रिक मिलेगा\n\nयह वेबसाइट देखकर पछताओगे कि पहले क्यों नहीं पता था!\n\n#JaduTona #Revenge #Magic";
+                if (navigator.share) {
+                    navigator.share({
+                        title: document.title,
+                        text: shareText,
+                        url: window.location.href
+                    }).catch(console.error);
+                } else {
+                    navigator.clipboard.writeText(shareText + " " + window.location.href).then(() => {
+                        showModal('शेयर करें', 'संदेश क्लिपबोर्ड पर कॉपी हो गया है, अब आप इसे कहीं भी पेस्ट करके शेयर कर सकते हैं!');
+                    }).catch(err => {
+                        showModal('माफ़ कीजिए', 'शेयर करने में कोई दिक्कत आ गई।');
+                    });
+                }
+            });
+
+            // Display a message in a custom modal
+            function showModal(title, message) {
+                modalTitle.textContent = title;
+                modalMessage.textContent = message;
+                modal.classList.remove('hidden');
+            }
+
+            // Close the modal
+            closeModalBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+
+            // Simulate the "Dark Energy Map"
+            const mapMessages = [
+                'अंधेरी ऊर्जा की जाँच हो रही है...',
+                'ऊर्जा में एक अजीब हलचल... या शायद बस किसी ने अपनी वाईफाई का पासवर्ड बदला है।',
+                'पुष्टि हुई: कोई तो आपसे पक्का नाराज़ है।',
+                'भारी मात्रा में ऊर्जा का झटका! शायद आपने पिछले शाप के पैसे नहीं दिए।',
+                'चिंता मत कीजिए, यह सिर्फ एक मज़ाक है, कोई असली जादू नहीं है।',
+                'जादुई बिल्ली ने आज काम करने से मना कर दिया है, कृपया कल फिर से जाँच करें।'
+            ];
+            let messageIndex = 0;
+            setInterval(() => {
+                messageIndex = (messageIndex + 1) % mapMessages.length;
+                mapMessage.textContent = mapMessages[messageIndex];
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
